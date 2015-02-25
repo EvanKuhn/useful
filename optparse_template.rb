@@ -1,12 +1,10 @@
 require 'optparse'
 
-
-
 # Use this template for full option parsing capabilities, using just the
 # optparse gem.
-
-
-
+#
+# To use, copy this file, take care of all the TODO's, and add your application
+# logic.
 
 #===============================================================================
 # Application usage info strings
@@ -25,7 +23,7 @@ DESCRIPTION
     description description description description description description
 
 USAGE
-    #{APPNAME} <command> [options]
+    #{APPNAME} [options]
 STR
 
 # TODO: update the footer

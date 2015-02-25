@@ -1,12 +1,10 @@
 require 'optparse'
 
-
-
 # Use this template for full option parsing capabilities, with commands, using
 # just the optparse gem.
-
-
-
+#
+# To use, copy this file, take care of all the TODO's, and add your application
+# logic.
 
 #===============================================================================
 # Application usage info strings
