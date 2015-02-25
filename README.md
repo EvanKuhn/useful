@@ -1,2 +1,2 @@
-# useful
+# Useful stuff
 Useful stuff
