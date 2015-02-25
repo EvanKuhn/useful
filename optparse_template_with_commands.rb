@@ -54,9 +54,7 @@ module MyApp
     def initialize
       @parser = OptionParser.new do |opts|
         opts.summary_width = 24
-        opts.separator ''
-        opts.separator 'OPTIONS'
-        opts.banner = ''
+        opts.banner = 'OPTIONS'
 
         # TODO: update options
         opts.on('-k', '--key VALUE', 'An option that takes a value') do |v|
@@ -73,7 +71,7 @@ module MyApp
 
     # Get the usage info string
     def usage
-      HEADER.chomp + @parser.to_s + "\n" + FOOTER
+      HEADER + "\n" + @parser.to_s + "\n" + FOOTER
     end
 
     # Parse an arguments array and return a new Arguments object
