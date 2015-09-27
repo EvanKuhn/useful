@@ -54,6 +54,7 @@ class CommandLine
   #     args.flag
   #
   def option(name, short, long, desc, default = nil, &block)
+    desc = desc + " (default: #{default})" if default
     # Save the option's default value and add the OptionParser logic
     @options[name] = default
     @parser.on(short, long, desc) do |v|
