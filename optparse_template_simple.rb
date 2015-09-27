@@ -27,6 +27,9 @@ parser = OptionParser.new do |parser|
   parser.on('-f', '--flag', 'A boolean flag') do
     opts[:flag] = true
   end
+  parser.on('-v', '--[no-]verbose', 'Toggle verbose output') do |v|
+    opts[:verbose] = v
+  end
   parser.on('-h', '--help', 'Display this screen.') do
     puts parser
     exit
